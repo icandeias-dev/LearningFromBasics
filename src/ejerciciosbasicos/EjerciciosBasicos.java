@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author ihcan
+ * @author Ismael Henrique Candeias E Silva
  */
 public class EjerciciosBasicos {
 

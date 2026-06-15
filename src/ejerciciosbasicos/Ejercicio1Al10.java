@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author ihcan
+ * @author Ismael Henrique Candeias E Silva
  */
 public abstract class Ejercicio1Al10 {
 
