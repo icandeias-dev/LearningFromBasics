@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ejerciciosbasicos;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author ihcan
+ */
+public class EjerciciosBasicos {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner sn = new Scanner(System.in);
+        
+        Ejercicio1Al10.ej9(sn);
+       
+
+    }
+    
+}
