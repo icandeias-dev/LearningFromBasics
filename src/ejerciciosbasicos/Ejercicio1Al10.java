@@ -220,4 +220,55 @@ public abstract class Ejercicio1Al10 {
         
         
     }
+    public static void ej10(Scanner sn){
+        //10. Pedir tres números y mostrarlos ordenados de mayor a menor.
+        //Esta vez lo haré con ifs como se pretende que se haga.
+        
+        final int cantidadNumeros = 3;
+        final int primerNum = 0;
+        final int segundoNum = 1;
+        final int tercerNum = 2;
+        
+        int [] numeros = new int[cantidadNumeros];
+        
+        String [] orden = {"primer","segundo","tercer"};
+        
+        for(int i = 0; i < orden.length; i++){
+            
+            System.out.print("Introduce el "+orden[i]+" numero: ");      
+            
+            numeros[i] = sn.nextInt();
+            
+        }
+        
+        if (numeros[primerNum] > numeros[segundoNum] && numeros[primerNum] > numeros[tercerNum]){ // Teniendo en cuenta que el primer numero sea el mayor
+            
+            if(numeros[segundoNum] > numeros[tercerNum]){  //Teniendo en cuenta que el segundo numero es el segundo mayor
+            
+                System.out.println("El orden de mayor a menor es: "+numeros[primerNum]+", "+numeros[segundoNum]+", "+numeros[tercerNum]);
+            }else{ // Teniendo en cuenta que el  tercer numero es el segundo mayor                      
+                System.out.println("El orden de mayor a menor es: "+numeros[primerNum]+", "+numeros[tercerNum]+", "+numeros[segundoNum]);
+            }
+            
+        }else if (numeros[segundoNum] > numeros[primerNum] && numeros[segundoNum] > numeros[tercerNum]){ // Teniendo en cuenta que el segundo numero sea el mayor
+            
+            if(numeros[primerNum] > numeros[tercerNum]){  //Teniendo en cuenta que el primer numero es el segundo mayor
+            
+                System.out.println("El orden de mayor a menor es: "+numeros[segundoNum]+", "+numeros[primerNum]+", "+numeros[tercerNum]);
+            }else{ // Teniendo en cuenta que el  tercer numero es el segundo mayor                      
+                System.out.println("El orden de mayor a menor es: "+numeros[segundoNum]+", "+numeros[tercerNum]+", "+numeros[primerNum]);
+            }
+        
+        } else { //// Teniendo en cuenta que el tercer numero sea el mayor
+            if(numeros[primerNum] > numeros[segundoNum]){  //Teniendo en cuenta que el primer numero es el segundo mayor
+            
+                System.out.println("El orden de mayor a menor es: "+numeros[tercerNum]+", "+numeros[primerNum]+", "+numeros[segundoNum]);
+            }else{ // Teniendo en cuenta que el  segundo numero es el segundo mayor                      
+                System.out.println("El orden de mayor a menor es: "+numeros[tercerNum]+", "+numeros[segundoNum]+", "+numeros[primerNum]);
+            }
+        }
+        
+        
+        
+    }
 }
