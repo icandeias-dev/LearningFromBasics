@@ -19,7 +19,7 @@ public class EjerciciosBasicos {
         
         Scanner sn = new Scanner(System.in);
         
-        Ejercicio1Al10.ej9(sn);
+        Ejercicio1Al10.ej10(sn);
        
 
     }
