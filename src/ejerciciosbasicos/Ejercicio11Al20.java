@@ -429,9 +429,9 @@ public abstract class Ejercicio11Al20 {
         int hora, min, seg;
         int hora2 ,min2 ,seg2; // Segundo siguiente;
         
-        boolean horaValida = true;
-        boolean minValido = true;
-        boolean segValido = true;
+        boolean horaValida;
+        boolean minValido; 
+        boolean segValido;
         
         System.out.print("Introduce la hora: ");
         hora = sn.nextInt();
@@ -446,18 +446,9 @@ public abstract class Ejercicio11Al20 {
         
         //Validamos horam minutos y segundos
         
-        if(hora < 0 || hora > 23){
-            horaValida = false;             
-        }else{
-            
-            if(min<0 || min > 59){
-                minValido = false;
-            }else{
-                if(seg < 0 || seg > 59){
-                    segValido = false;
-                }
-            }
-        }
+        horaValida = (hora >= 0) && (hora <= 23);
+        minValido = (min>= 0) && (min<= 59);
+        segValido = (seg>= 0)&&(seg<= 59);
         
         if(horaValida && minValido && segValido){
             
