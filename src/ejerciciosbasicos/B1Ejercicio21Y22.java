@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author ihcan
  */
-public abstract class Ejercicio21Al25 {
+public abstract class B1Ejercicio21Y22 {
 
     public static void ej21(Scanner sn) {
 

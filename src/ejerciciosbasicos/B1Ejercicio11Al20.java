@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author ihcan
  */
-public abstract class Ejercicio11Al20 {
+public abstract class B1Ejercicio11Al20 {
 
     public static void ej11(Scanner sn) {
         //11. Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene.

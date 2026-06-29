@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author Ismael Henrique Candeias E Silva
  */
-public abstract class Ejercicio1Al10 {
+public abstract class B1Ejercicio1Al10 {
 
     public static void ej1(Scanner sn) {
 
