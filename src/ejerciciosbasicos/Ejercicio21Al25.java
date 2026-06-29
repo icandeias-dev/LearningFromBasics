@@ -93,8 +93,11 @@ public abstract class Ejercicio21Al25 {
             
             int arregloIndiceDecenas = decenas - 1;
             
-            System.out.printf("%d escrito es el número %s y %s.\n",numeroInmutable,nombreDecenas[arregloIndiceDecenas],nombreUnidades[unidad]);
-            
+            if(unidad != 0){
+                System.out.printf("%d escrito es el número %s y %s.\n",numeroInmutable,nombreDecenas[arregloIndiceDecenas],nombreUnidades[unidad]);
+            }else{
+                System.out.printf("%d escrito es el número %s.\n",numeroInmutable,nombreDecenas[arregloIndiceDecenas]);
+            }
         }
         
         
