@@ -173,9 +173,13 @@ public abstract class B2Ejercicio1Al10 {
 
         } while (!esNegativo);
 
+        if(contador != 0){
         media = total / contador;
 
         System.out.printf("Has introducido un número negativo. La media de todos los números previos es %.2f \n", media);
+        }else{
+            System.out.println("Necesitas al menos un número para calcular una media.");
+        }
 
     }
 
@@ -209,10 +213,10 @@ public abstract class B2Ejercicio1Al10 {
 
         for (int i = 100; i >= 0; i -= 7) {
 
-            if (i != 0) {
-                sentencia += i + " ";
-            } else {
+            if (i - 7 < 0) {
                 sentencia += i + ".";
+            } else {
+                sentencia += i + " ";
             }
         }
 
